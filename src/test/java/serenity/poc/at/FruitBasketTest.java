@@ -14,7 +14,6 @@ import net.thucydides.junit.annotations.TestData;
 import serenity.poc.steps.FruitBasketSteps;
 
 @RunWith(SerenityParameterizedRunner.class)  
-//@UseTestDataFrom(value="src/test/resources/datasource.csv", separator=';')  
 public class FruitBasketTest {
 
 	@TestData                                                   
@@ -44,27 +43,7 @@ public class FruitBasketTest {
 		this.appleQuantity = appleQuantity;
 		this.totalPrice = totalPrice;
 	}
-/*
-	public void setBananaPrice(Double bananaPrice) {
-		this.bananaPrice = bananaPrice;
-	}
 
-	public void setApplePrice(Double applePrice) {
-		this.applePrice = applePrice;
-	}
-
-	public void setBananaQuantity(Integer bananaQuantity) {
-		this.bananaQuantity = bananaQuantity;
-	}
-
-	public void setAppleQuantity(Integer appleQuantity) {
-		this.appleQuantity = appleQuantity;
-	}
-
-	public void setTotalPrice(Double totalPrice) {
-		this.totalPrice = totalPrice;
-	}
-*/	
 	@Qualifier
     public String qualifier() {
         return "TEST ID";

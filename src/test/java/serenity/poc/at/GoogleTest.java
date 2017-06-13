@@ -17,17 +17,17 @@ import serenity.poc.pageobjects.GooglePage;
 @RunWith(SerenityRunner.class)
 public class GoogleTest {
 
+	private String searchString = "data outdoor";
+	
 	private static String x = System.setProperty("webdriver.chrome.driver","D:\\Dev\\chromedriver.exe");
 	
 	@Managed(driver="chrome")
 	private WebDriver driver;
-
+	
 	@Steps
     private GooglePage googlePage;
 	
-	private String searchString = "data outdoor";
-
-    @Test
+	@Test
     public void shouldHaveProperTitlePage() {
 
     	//Given I open the browser
